@@ -15,4 +15,7 @@ angular.module("mainModule", ['ui.router'])
 				url: '/laserservice',
 				templateUrl: 'views/laserservice.html'
 			});
+	})
+	.controller('homeCtrl', function($scope) {
+		
 	});
