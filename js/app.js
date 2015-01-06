@@ -6,7 +6,7 @@ angular.module("mainModule", ['ui.router'])
 			.state('home', {
 				url: '/home',
 				templateUrl: 'views/home.html',
-				controller: function($scope) {}
+				controller: 'homeCtrl'
 			})
 			.state('news', {
 				url: '/news',
