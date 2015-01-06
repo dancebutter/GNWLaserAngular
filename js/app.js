@@ -1,6 +1,6 @@
 angular.module("mainModule", ['ui.router'])
 	.config(['$urlRouterProvider', '$stateProvider',function($urlRouterProvider, $stateProvider) {
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('home');
 
 		$stateProvider
 			.state('home', {
@@ -10,14 +10,10 @@ angular.module("mainModule", ['ui.router'])
 			})
 			.state('news', {
 				url: '/news',
-				templateUrl: 'views/news.html',
-
+				templateUrl: 'views/news.html'
 			})
 			.state('laserService', {
 				url: '/laserservice',
 				templateUrl: 'views/laserservice.html'
 			});
-	}])
-	.controller('homeCtrl', function($scope) {
-
-	});
+	}]);
