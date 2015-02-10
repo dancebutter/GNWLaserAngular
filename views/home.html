@@ -1,15 +1,20 @@
 <div class="container-fluid" ng-controller="homeCtrl">
 	<div class="jumbotron" align="center">
 		<div class="row">
-			<div class="col-md-4 col-xs-12">
-				<img src="image/LOGO_mid.JPG" height="140" alt="GNW Logo"></img>
+			<div class="col-md-4 col-sm-4 col-xs-4" align="right">
+				<div class="container">
+					<img src="image/LOGO_small.JPG" class="img-responsive" alt="GNW Logo"></img>
+				</div>
 			</div>
-			<div class="col-md-8 col-sm-12 col-xs-12">
-				<h1><b>GNW Laser</b></h1>
-				<h3>Laser Engraving Service & Systems</h3>
+			<div class="col-md-8 col-sm-8 col-xs-8" align="left">
+				<div class="container">
+					<h1><b>GNW Laser</b></h1>
+					<h3>Laser Engraving Service & Systems</h3>
+				</div>
 			</div>
 		</div>
-		<hr />
+		<br>
+		<!-- 3 images start -->
 		<div class="row">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		        <ol class="carousel-indicators">
@@ -36,7 +41,64 @@
 		          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		          <span class="sr-only">Next</span>
 		        </a>
-		      </div>
+	      	</div>
 		</div>
+		<!-- 3 images end -->
+	</div>
+	<div class="container">
+		<!-- 3 info start -->
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="media">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img class="media-object" src="image/DM_OFB_G_1104_1_thumb.bmp" alt="Product">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Product</h4>
+						<p>Advanced laser systems for laser engraving, marking, etching, annealing, cutting and microprocessing.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="media">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img class="media-object" src="image/Deep_engraved_aluminum_part.jpg" alt="Laser Service">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Laser Service</h4>
+						<p>We provide professional and high quality laser engraving services for your customization, tracking and personalization needs.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="media">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img class="media-object" src="image/IMG_0493.JPG" alt="News">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">News</h4>
+						<p>Great News! Our new type of laser system is available: Model 750. Click Read More to check out the detail.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 3 info end -->
+
+		<!-- 16:9 video start -->
+		<div class="col-lg-8 col-lg-offset-2 
+					col-md-8 col-md-offset-2 
+					col-sm-8 col-sm-offset-2
+					col-xs-12">
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item" src="http://player.vimeo.com/video/88541961?title=0&byline=0&portrait=0"></iframe>
+			</div>
+		</div>
+		<!-- 16:9 video end -->
 	</div>
 </div>

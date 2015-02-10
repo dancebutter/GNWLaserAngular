@@ -15,5 +15,21 @@ angular.module("mainModule", ['ui.router'])
 			.state('laserService', {
 				url: '/laserservice',
 				templateUrl: 'views/laserservice.html'
+			})
+			.state('gallery', {
+				url: '/gallery',
+				templateUrl: 'views/gallery.html'
+			})
+			.state('product', {
+				url: '/product',
+				templateUrl: 'views/product.html'
+			})
+			.state('company', {
+				url: '/company',
+				templateUrl: 'views/company.html'
+			})
+			.state('contactus', {
+				url: '/contactus',
+				templateUrl: 'views/contactus.html'
 			});
 	}]);
