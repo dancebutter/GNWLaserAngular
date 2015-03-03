@@ -1,5 +1,5 @@
 angular.module("mainModule", ['ui.router'])
-	.config(['$urlRouterProvider', '$stateProvider',function($urlRouterProvider, $stateProvider) {
+	.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
 		$urlRouterProvider.otherwise('home');
 
 		$stateProvider
@@ -10,7 +10,12 @@ angular.module("mainModule", ['ui.router'])
 			})
 			.state('news', {
 				url: '/news',
-				templateUrl: 'views/news.html'
+				templateUrl: 'views/news.html',
+				controller: 'newsCtrl',
+				views: {
+					"view01": { templateUrl: "views/news/05-01-2014.html" },
+					"view02": { templateUrl: "views/news/03-18-2014.html"}
+				}
 			})
 			.state('laserService', {
 				url: '/laserservice',
